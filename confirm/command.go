@@ -18,6 +18,7 @@ func (o Options) Run() error {
 	m, err := tea.NewProgram(model{
 		affirmative:      o.Affirmative,
 		negative:         o.Negative,
+		showOutput:       o.ShowOutput,
 		confirmation:     o.Default,
 		defaultSelection: o.Default,
 		timeout:          o.Timeout,

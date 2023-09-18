@@ -28,6 +28,7 @@ type model struct {
 	hasTimeout  bool
 	timeout     time.Duration
 
+	showOutput   bool
 	confirmation bool
 
 	defaultSelection bool
