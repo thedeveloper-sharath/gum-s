@@ -34,10 +34,21 @@ func (o Options) Run() error {
 
 	if m.(model).aborted {
 		os.Exit(exit.StatusAborted)
-	} else if m.(model).confirmation {
-		os.Exit(0)
+
 	} else {
-		os.Exit(1)
+		if o.ShowOutput {
+			confirmationText := m.(model).negative
+			if m.(model).confirmation {
+				confirmationText = m.(model).affirmative
+			}
+			fmt.Println(m.(model).prompt, confirmationText)
+		}
+
+		if m.(model).confirmation {
+			os.Exit(0)
+		} else {
+			os.Exit(1)
+		}
 	}
 
 	return nil
