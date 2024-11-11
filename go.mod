@@ -12,7 +12,7 @@ require (
 	github.com/charmbracelet/lipgloss v0.13.0
 	github.com/charmbracelet/log v0.4.0
 	github.com/charmbracelet/x/ansi v0.2.3
-	github.com/charmbracelet/x/term v0.2.0
+	github.com/charmbracelet/x/term v0.2.1
 	github.com/muesli/reflow v0.3.0
 	github.com/muesli/roff v0.1.0
 	github.com/muesli/termenv v0.15.3-0.20240618155329-98d742f6907a
@@ -46,7 +46,7 @@ require (
 	golang.org/x/exp v0.0.0-20240613232115-7f521ea00fb8 // indirect
 	golang.org/x/net v0.27.0 // indirect
 	golang.org/x/sync v0.8.0 // indirect
-	golang.org/x/sys v0.25.0 // indirect
+	golang.org/x/sys v0.26.0 // indirect
 	golang.org/x/term v0.22.0 // indirect
 	golang.org/x/text v0.18.0 // indirect
 )
